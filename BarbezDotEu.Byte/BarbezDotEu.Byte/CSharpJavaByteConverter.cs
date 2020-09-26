@@ -23,7 +23,7 @@ namespace BarbezDotEu.Byte
         {
             var result = string.Empty;
             var toConvert = cSharpByteArray.Split(new char[] { ',' });
-            var converted = ConvertCSharpStringArrayToJavaByteArray(toConvert, 127);
+            var converted = ConvertCSharpStringArrayToJavaByteArray(toConvert);
             for (int i = 0; i < converted.Length; i++)
             {
                 if (i == converted.Length - 1) result += converted[i].ToString();
@@ -42,7 +42,7 @@ namespace BarbezDotEu.Byte
         {
             var result = string.Empty;
             var toConvert = javaByteArray.Split(new char[] { ',' });
-            var converted = ConvertJavaStringArrayToCSharpByteArray(toConvert, 0);
+            var converted = ConvertJavaStringArrayToCSharpByteArray(toConvert);
             for (int i = 0; i < converted.Length; i++)
             {
                 if (i == converted.Length - 1) result += converted[i].ToString();
@@ -55,16 +55,16 @@ namespace BarbezDotEu.Byte
         /// <summary>
         /// Converts a Java byte array (represented as string) into a C# byte array (returned as its int representation for consistency).
         /// </summary>
-        /// <param name="javaByteArray">The string representation of a Java byte array.</param>
+        /// <param name="javaByteArray">The string[] representation of a Java byte array.</param>
         /// <returns>The C# byte array as integer array.</returns>
-        public static int[] ConvertJavaStringArrayToCSharpByteArray(string[] toConvert, byte threshold)
+        public static int[] ConvertJavaStringArrayToCSharpByteArray(string[] javaByteArray)
         {
             var numbers = new List<int>();
-            foreach (string s in toConvert)
+            foreach (string s in javaByteArray)
             {
                 if (int.TryParse(s, out var n))
                 {
-                    if (n < threshold)
+                    if (n < 0)
                         numbers.Add(n + (byte.MaxValue + 1));
                     else numbers.Add(n);
                 }
@@ -77,17 +77,17 @@ namespace BarbezDotEu.Byte
         /// <summary>
         /// Converts a C# byte array (represented as string) into a Java byte array (returned as its int representation because Java byte arrays can contain negative values).
         /// </summary>
-        /// <param name="cSharpByteArray">The string representation of a C# byte array.</param>
+        /// <param name="cSharpByteArray">The string[] representation of a C# byte array.</param>
         /// <returns>The Java byte array as integer array.</returns>
-        public static int[] ConvertCSharpStringArrayToJavaByteArray(string[] toConvert, byte threshold)
+        public static int[] ConvertCSharpStringArrayToJavaByteArray(string[] cSharpByteArray)
         {
             var numbers = new List<int>();
-            foreach (string s in toConvert)
+            foreach (string s in cSharpByteArray)
             {
                 var match = digitsOnly.Match(s);
                 if (int.TryParse(match.Value, out var n))
                 {
-                    if (n > threshold)
+                    if (n > 127)
                         numbers.Add(n - (byte.MaxValue +1));
                     else numbers.Add(n);
                 }
