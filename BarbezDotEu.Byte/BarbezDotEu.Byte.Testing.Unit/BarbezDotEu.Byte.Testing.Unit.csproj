@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Barbez.eu</Authors>
+    <Company>Barbez.eu</Company>
+    <Product>BarbezDotEu.Byte</Product>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
