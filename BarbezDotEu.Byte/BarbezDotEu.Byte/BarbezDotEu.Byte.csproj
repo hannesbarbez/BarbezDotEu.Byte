@@ -1,11 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Authors>Barbez.eu</Authors>
-    <Company>Barbez.eu</Company>
+    <Authors>Hannes Barbez</Authors>
+    <Company>Hannes Barbez</Company>
+    <Title>BarbezDotEu.Byte</Title>
     <Product>BarbezDotEu.Byte</Product>
-    <Copyright>©2020-21 Barbez.eu</Copyright>
+    <PackageId>BarbezDotEu.Byte</PackageId>
+    <Copyright>©2021 Barbez.eu</Copyright>
+    <Version>1.0.0</Version>
+    <Description>Generic logic pertaining to byte and byte arrays.</Description>
+    <PackageTags>byte, byte array</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://barbez.eu/</PackageProjectUrl>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.Byte</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-
 </Project>

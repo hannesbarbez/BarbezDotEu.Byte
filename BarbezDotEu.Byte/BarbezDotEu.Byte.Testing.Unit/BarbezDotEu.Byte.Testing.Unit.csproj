@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Authors>Barbez.eu</Authors>
-    <Company>Barbez.eu</Company>
+    <Authors>Hannes Barbez</Authors>
+    <Company>Hannes Barbez</Company>
     <Product>BarbezDotEu.Byte</Product>
-    <Copyright>©2020-21 Barbez.eu</Copyright>
+    <Copyright>©2021 Barbez.eu</Copyright>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
