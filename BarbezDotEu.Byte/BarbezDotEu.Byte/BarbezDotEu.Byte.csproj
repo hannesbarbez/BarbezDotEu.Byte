@@ -14,8 +14,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://barbez.eu/</PackageProjectUrl>
     <PackageOutputPath>./nupkg</PackageOutputPath>
-    <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.Byte</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.Byte</RepositoryUrl>
   </PropertyGroup>
 </Project>
