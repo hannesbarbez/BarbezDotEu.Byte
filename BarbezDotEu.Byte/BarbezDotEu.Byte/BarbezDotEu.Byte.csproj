@@ -8,4 +8,15 @@
     <Copyright>©2020-21 Barbez.eu</Copyright>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\hanne\source\repos\BarbezDotEu.Byte\BarbezDotEu.Byte\BarbezDotEu.Byte\BarbezDotEu.Byte.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vsxmd" Version="1.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

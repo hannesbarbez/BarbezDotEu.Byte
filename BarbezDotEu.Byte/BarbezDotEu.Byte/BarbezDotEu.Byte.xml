@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BarbezDotEu.Byte</name>
+    </assembly>
+    <members>
+        <member name="T:BarbezDotEu.Byte.ByteHelper">
+            <summary>
+            Helper class containing diverse static methods that can be used in any type of context.
+            </summary>
+        </member>
+        <member name="M:BarbezDotEu.Byte.ByteHelper.ToByteArray(System.String,System.Text.Encoding)">
+            <summary>
+            Creates a byte array from the string, using the 
+            System.Text.Encoding.Default encoding unless another is specified.
+            </summary>
+        </member>
+        <member name="T:BarbezDotEu.Byte.CSharpJavaByteConverter">
+            <summary>
+            Byte array converter allowing for a fast enough and accurate conversion between Java and C# byte arrays.
+            </summary>
+        </member>
+        <member name="M:BarbezDotEu.Byte.CSharpJavaByteConverter.ConvertCSharpByteArrayToJavaByteArray(System.String)">
+            <summary>
+            Converts a C# byte array (represented as string) into a Java byte array (returned as its string representation).
+            </summary>
+            <param name="cSharpByteArray">The string representation of a C# byte array.</param>
+            <returns>The string representation of a Java byte array.</returns>
+        </member>
+        <member name="M:BarbezDotEu.Byte.CSharpJavaByteConverter.ConvertJavaByteArrayToCSharpByteArray(System.String)">
+            <summary>
+            Converts a Java byte array (represented as string) into a C# byte array (returned as its string representation).
+            </summary>
+            <param name="javaByteArray">The string representation of a Java byte array.</param>
+            <returns>The string representation of a C# byte array.</returns>
+        </member>
+        <member name="M:BarbezDotEu.Byte.CSharpJavaByteConverter.ConvertJavaStringArrayToCSharpByteArray(System.String[])">
+            <summary>
+            Converts a Java byte array (represented as string) into a C# byte array (returned as its int representation for consistency).
+            </summary>
+            <param name="javaByteArray">The string[] representation of a Java byte array.</param>
+            <returns>The C# byte array as integer array.</returns>
+        </member>
+        <member name="M:BarbezDotEu.Byte.CSharpJavaByteConverter.ConvertCSharpStringArrayToJavaByteArray(System.String[])">
+            <summary>
+            Converts a C# byte array (represented as string) into a Java byte array (returned as its int representation because Java byte arrays can contain negative values).
+            </summary>
+            <param name="cSharpByteArray">The string[] representation of a C# byte array.</param>
+            <returns>The Java byte array as integer array.</returns>
+        </member>
+    </members>
+</doc>
