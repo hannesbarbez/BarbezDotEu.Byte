@@ -84,3 +84,6 @@ The C# byte array as integer array.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | javaByteArray | [System.String[]](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k:System.String[] 'System.String[]') | The string[] representation of a Java byte array. |
+
+## Author
+www.barbez.eu
