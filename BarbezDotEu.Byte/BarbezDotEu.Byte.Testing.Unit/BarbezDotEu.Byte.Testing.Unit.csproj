@@ -4,9 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
     <Authors>Hannes Barbez</Authors>
     <Company>Hannes Barbez</Company>
+    <Title>BarbezDotEu.Byte</Title>
     <Product>BarbezDotEu.Byte</Product>
-    <Copyright>©2021 Hannes Barbez</Copyright>
-    <IsPackable>false</IsPackable>
+    <Copyright>©2022 Hannes Barbez</Copyright>
+    <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.Byte</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
