@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Authors>Hannes Barbez</Authors>
     <Company>Hannes Barbez</Company>
     <Title>BarbezDotEu.Byte</Title>
     <Product>BarbezDotEu.Byte</Product>
-    <Copyright>©2022 Hannes Barbez</Copyright>
+    <Copyright>©2023 Hannes Barbez</Copyright>
     <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.Byte</RepositoryUrl>
   </PropertyGroup>
 
