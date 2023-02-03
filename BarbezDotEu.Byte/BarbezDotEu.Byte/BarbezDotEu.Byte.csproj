@@ -1,22 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <Authors>Barbez.eu</Authors>
-    <Company>Barbez.eu</Company>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Hannes Barbez</Authors>
+    <Company>Hannes Barbez</Company>
+    <Title>BarbezDotEu.Byte</Title>
     <Product>BarbezDotEu.Byte</Product>
-    <Copyright>©2020-21 Barbez.eu</Copyright>
+    <PackageId>BarbezDotEu.Byte</PackageId>
+    <Copyright>©2023 Hannes Barbez</Copyright>
+    <Version>2.2.0</Version>
+    <Description>Generic logic pertaining to byte and byte arrays.</Description>
+    <PackageTags>byte, byte array</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://barbez.eu/</PackageProjectUrl>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.Byte</RepositoryUrl>
+    <PackageIconUrl>https://i2.wp.com/barbez.eu/wp-content/uploads/2020/02/cropped-BarbezDotEu-logo-1.png?resize=64%2C64</PackageIconUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\hanne\source\repos\BarbezDotEu.Byte\BarbezDotEu.Byte\BarbezDotEu.Byte\BarbezDotEu.Byte.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Vsxmd" Version="1.4.5">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-
 </Project>
