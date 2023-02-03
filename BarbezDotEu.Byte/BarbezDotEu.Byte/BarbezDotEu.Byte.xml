@@ -15,6 +15,34 @@
             System.Text.Encoding.Default encoding unless another is specified.
             </summary>
         </member>
+        <member name="M:BarbezDotEu.Byte.ByteHelper.StringToByteArray(System.String)">
+            <summary>
+            Converts a "written" byte-array to an actual byte array.
+            e.g. input string: 69CC766AEFAE05F6BE92A529E27D6AC50A0DC73EFB3631534B5E41A9311D56AB.
+            </summary>
+            <param name="hex">The "written" byte-array to convert.</param>
+            <returns>The actual byte-array representation.</returns>
+            <remarks>Based on https://stackoverflow.com/a/321404/8669939</remarks>
+        </member>
+        <member name="M:BarbezDotEu.Byte.ByteHelper.ByteArrayToString(System.Byte[])">
+            <summary>
+            Generates a string representation of a byte array.
+            </summary>
+            <param name="hash">The hash to write as string.</param>
+            <returns>A string representation of the hash.</returns>
+        </member>
+        <member name="T:BarbezDotEu.Byte.CryptoHelper">
+            <summary>
+            Helpers for cryptography.
+            </summary>
+        </member>
+        <member name="M:BarbezDotEu.Byte.CryptoHelper.GetTsqlLikeHashBytes(System.String)">
+            <summary>
+            Equivalent of T-SQL's HASHBYTES('SHA2_256', &lt;toHash&gt;)".
+            </summary>
+            <param name="toHash">The string to hash.</param>
+            <returns>The result of the hash.</returns>
+        </member>
         <member name="T:BarbezDotEu.Byte.CSharpJavaByteConverter">
             <summary>
             Byte array converter allowing for a fast enough and accurate conversion between Java and C# byte arrays.

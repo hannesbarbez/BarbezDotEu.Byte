@@ -20,4 +20,14 @@
     <PackageIconUrl>https://i2.wp.com/barbez.eu/wp-content/uploads/2020/02/cropped-BarbezDotEu-logo-1.png?resize=64%2C64</PackageIconUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DocumentationFile>C:\Users\hanne\source\repos\BarbezDotEu.Byte\BarbezDotEu.Byte\BarbezDotEu.Byte\BarbezDotEu.Byte.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Vsxmd" Version="1.4.5">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
 </Project>
