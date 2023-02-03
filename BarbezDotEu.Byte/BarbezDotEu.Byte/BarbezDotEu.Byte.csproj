@@ -6,8 +6,8 @@
     <Title>BarbezDotEu.Byte</Title>
     <Product>BarbezDotEu.Byte</Product>
     <PackageId>BarbezDotEu.Byte</PackageId>
-    <Copyright>©2022 Hannes Barbez</Copyright>
-    <Version>2.1.0</Version>
+    <Copyright>©2023 Hannes Barbez</Copyright>
+    <Version>2.2.0</Version>
     <Description>Generic logic pertaining to byte and byte arrays.</Description>
     <PackageTags>byte, byte array</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
