@@ -15,7 +15,7 @@ namespace BarbezDotEu.Byte.Testing.Unit
             "140, 68, 77, 94, 0, 0, 0, 10, 73, 68, 65, 84, 24, 211, 99, 96, 0, 0, 0, 2, 0, 1, 152, 99, 108, 215, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130";
 
         [TestMethod]
-        public void CanBiDirectionallyConvert()
+        public void BiDirectionallyConvert()
         {
             var javaByteArray = CSharpJavaByteConverter.ConvertCSharpByteArrayToJavaByteArray(CSharpByteArrayString);
             Assert.IsTrue(javaByteArray.Any());
