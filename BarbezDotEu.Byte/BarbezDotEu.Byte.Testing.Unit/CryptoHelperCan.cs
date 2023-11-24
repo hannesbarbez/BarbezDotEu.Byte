@@ -20,5 +20,16 @@ namespace BarbezDotEu.Byte.Testing.Unit
             var output = ByteHelper.StringToByteArray(hashed);
             Assert.IsTrue(Enumerable.SequenceEqual(output, expectedSqlLikeHashBytes));
         }
+
+        [TestMethod]
+        public void ProduceResultConsistentWithByteHelpera()
+        {
+            var original = "Accounts Payable";
+            var expectedSqlLikeHashBytes = CryptoHelper.ComputeSha256Hash(original, Encoding.Unicode);
+
+            var hashed = "4D2BD93F2F216D55C2D48442B879D911027B97559A9B9FC3F320C282986011AC";
+            var output = ByteHelper.StringToByteArray(hashed);
+            Assert.IsTrue(Enumerable.SequenceEqual(output, expectedSqlLikeHashBytes));
+        }
     }
 }
