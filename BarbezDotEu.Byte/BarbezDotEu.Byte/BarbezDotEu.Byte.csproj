@@ -6,8 +6,8 @@
     <Title>BarbezDotEu.Byte</Title>
     <Product>BarbezDotEu.Byte</Product>
     <PackageId>BarbezDotEu.Byte</PackageId>
-    <Copyright>©2023 Hannes Barbez</Copyright>
-    <Version>3.0.0</Version>
+    <Copyright>©2025 Hannes Barbez</Copyright>
+    <Version>3.0.11</Version>
     <Description>Generic logic pertaining to byte and byte arrays.</Description>
     <PackageTags>byte, byte array</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -20,4 +20,12 @@
     <PackageIconUrl>https://i2.wp.com/barbez.eu/wp-content/uploads/2020/02/cropped-BarbezDotEu-logo-1.png?resize=64%2C64</PackageIconUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+    <!-- only applies when Configuration == Release: -->
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <!-- Turn off generation of a .pdb and strip debug info entirely -->
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
 </Project>
