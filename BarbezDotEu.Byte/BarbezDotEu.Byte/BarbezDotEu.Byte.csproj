@@ -17,8 +17,12 @@
     <RepositoryType>GIT</RepositoryType>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/hannesbarbez/BarbezDotEu.Byte</RepositoryUrl>
-    <PackageIconUrl>https://i2.wp.com/barbez.eu/wp-content/uploads/2020/02/cropped-BarbezDotEu-logo-1.png?resize=64%2C64</PackageIconUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>ICON.png</PackageIcon>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
     <!-- only applies when Configuration == Release: -->
@@ -28,4 +32,8 @@
         <DebugSymbols>false</DebugSymbols>
         <Optimize>true</Optimize>
     </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\..\ICON.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
 </Project>
